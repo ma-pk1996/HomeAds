@@ -1,0 +1,52 @@
+{
+  "ads": [
+    {
+      "title": "آپارتمان 70 متری چیتگر",
+      "image": "https://www.khaneanzali.com/wp-content/uploads/2021/09/77.jpeg",
+      "price": "243",
+      "description": "آپارتمان زیبا با ویوی دره",
+      "location": "[35.75802872432467,51.27777096815408]",
+      "id": "flau3pA"
+    },
+    {
+      "title": "آپارتمان 76 متری لندن",
+      "image": "https://www.khaneanzali.com/wp-content/uploads/2021/09/77.jpeg",
+      "price": "355",
+      "description": "آپارتمان زیبا با ویوی دریاچه",
+      "location": "[35.68109695636422,51.259918184950955]",
+      "id": "N17SNC0"
+    }
+  ],
+  "users": [
+    {
+      "email": "mahdi@gmail.com",
+      "password": "$2a$10$nchjJH7AglIqk5t.9zn.3e1dZ4aHVtSGN.XZfM.rWCyEkLewo6fTW",
+      "id": "1"
+    },
+    {
+      "email": "moji@gmail.com",
+      "password": "$2a$10$qCwKjxduZOBfqOTUPcrgIeffkeQOCLg.xqQcWzV9uIP1NnU8xjWFa",
+      "id": "EN4Pkd6"
+    },
+    {
+      "email": "mahdiii.pk75@gmail.com",
+      "password": "$2a$10$BeOKCDa4LEnpNOWbhMc2T.kMnlZcwKE5BrL/BHoD0DjIL1B/RLzOW",
+      "id": "zfLPNmH"
+    },
+    {
+      "email": "mahdi.pk77@gmail.com",
+      "password": "$2a$10$o2ngVVVIQIB4vrBpnRO8UuaF5cfGjIjg2DS3VXrRUXIrEPflG4DwG",
+      "id": "9zMPF_9"
+    },
+    {
+      "email": "kopak@gmail.com",
+      "password": "$2a$10$XgBWLqLCfsuQIF5ag3lbz.DGhD1ODvDZs4RgGqFCjWJN2rLKBDv2m",
+      "id": "4rpc_fP"
+    },
+    {
+      "email": "m.blackops77@gmail.com",
+      "password": "$2a$10$YD4GZ.XZQT4i55FcJnPpOe7M/CZX.Ayl4qHHZ6Nx6JZZnyuEilBKa",
+      "id": "ewtdd0x"
+    }
+  ]
+}

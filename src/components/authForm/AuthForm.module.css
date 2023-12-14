@@ -1,0 +1,66 @@
+
+
+.form {
+    max-width: 40rem;
+    margin: 2rem auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+    display: block;
+    width: 100%;
+}
+
+.head {
+    text-align: right;
+}
+
+.form input,
+.form textarea {
+    font: inherit;
+    padding: 0.25rem;
+}
+
+.lab {
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.actions button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-800);
+    border: 1px solid seagreen;
+    margin-left: 4rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.actions a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(98, 98, 239);
+}
+
+.actions p {
+    color: rgb(117, 117, 117);
+}
+
+.actions button:hover {
+    background-color: var(--color-primary-300);
+}
+
+.actions a:hover {
+    background-color: var(--color-gray-800);
+}

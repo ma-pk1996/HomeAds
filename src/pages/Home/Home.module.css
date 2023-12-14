@@ -1,0 +1,24 @@
+
+.home {
+    margin-left: 11rem;
+    background-color: white;
+    color: black;
+}
+
+.darkhome {
+    margin-left: 11rem;
+    background-color: #292d31;
+    color: #ffffff;
+}
+
+.head {
+    margin-left: 17rem;
+    margin-bottom: 3rem;
+}
+
+.khane {
+    width: 650px;
+    height: 350px;
+    margin-left: 7rem;
+    border-radius: 14px;
+}

@@ -1,0 +1,76 @@
+.form {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.darkform {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.darkform label,
+.darkform input,
+.darkform textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.25rem;
+  background-color: inherit;
+  color: rgb(59, 62, 59);
+}
+
+.darkform input,
+.darkform textarea {
+  font: inherit;
+  padding: 0.25rem;
+  background-color: inherit;
+  color: rgb(207, 207, 207);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+#btn:hover {
+  background-color: aquamarine;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background-color: rgb(143, 143, 143);
+  color: var(--color-gray-800);
+  border: none;
+}
+
+.actions button[type='button'] {
+  background-color: transparent;
+  color: var(--color-gray-300);
+}
+
+.actions button:hover {
+  background-color: rgb(116, 143, 126);
+}
+
+.actions button[type='button']:hover {
+  background-color: var(--color-gray-800);
+}
+
+

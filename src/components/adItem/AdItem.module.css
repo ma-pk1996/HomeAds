@@ -7,6 +7,7 @@
 .ad img {
   width: 30rem;
   border-radius: 4px;
+  margin-bottom: 2rem;
 }
 
 .actions {
@@ -17,14 +18,18 @@
   padding: 0;
 }
 
+.actions a {
+  color: rgb(106, 106, 255);
+}
+
 .actions a,
 .actions button {
   padding: 0.25rem 1rem;
   text-decoration: none;
   font: inherit;
   cursor: pointer;
+  border: 1px solid greenyellow;
 }
-
 .actions button {
   background-color: transparent;
   border: none;

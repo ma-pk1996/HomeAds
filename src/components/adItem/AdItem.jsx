@@ -27,10 +27,10 @@ export function AdItem({ ad }) {
 
   return (
     <article className={classes.ad}>
-      <img src={ad.image} alt={ad.title} />
       <h1>{ad.title}</h1>
       <p>قیمت : {ad.price}</p>
       <p>{ad.description}</p>
+      <img src={ad.image} alt={ad.title} />
       <div className={classes.container}>
         <MapContainer style={{ height: '18rem', borderRadius: '8px' }} center={[35.7, 51.4]} zoom={zoomLevel} scrollWheelZoom={true}>
           <TileLayer
@@ -41,8 +41,8 @@ export function AdItem({ ad }) {
         </MapContainer>
       </div>
       <menu className={classes.actions}>
-        <Link to="edit">Edit</Link>
-        <button onClick={deleteHandler}>Delete</button>
+        <Link to="edit">ویرایش</Link>
+        <button onClick={deleteHandler}>حذف آگهی</button>
       </menu>
     </article>
   );

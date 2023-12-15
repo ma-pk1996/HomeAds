@@ -1,5 +1,5 @@
 import { json, redirect } from 'react-router-dom';
-
+import { processEnv } from '../../process.env';
 import { AuthForm } from '../../components/authForm';
 
 export function AuthenticationPage() {
@@ -9,6 +9,7 @@ export function AuthenticationPage() {
 
 export async function action({ request }) {
   const searchParams = new URL(request.url).searchParams;
+  const url = processEnv.REACT_APP_SERVER_URL;
   const mode = searchParams.get('mode') || 'login';
 
   if (mode !== 'login' && mode !== 'signup') {
@@ -21,7 +22,7 @@ export async function action({ request }) {
     password: data.get('password'),
   };
 
-  const response = await fetch('http://localhost:3004/' + mode, {
+  const response = await fetch(url + mode, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

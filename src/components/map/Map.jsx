@@ -20,7 +20,7 @@ export function Map(props) {
   }
 
   return (
-    <div style={{ width: '22rem', justifyContent: 'center' }}>
+    <div style={{ width: '41rem', justifyContent: 'center' }}>
       <MapContainer style={{ height: '18rem' }} center={[35.7, 51.4]} zoom={zoomLevel} scrollWheelZoom={true} >
         <TileLayer
           attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'

@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { AdsList } from "../../components";
 import { useSelector } from "react-redux";
 import classes from "./Ads.module.css";
-
+import { processEnv } from '../../process.env';
 
 export default function Ads() {
     const lightTheme = useSelector(state => state.theme.lightTheme);
@@ -17,7 +17,8 @@ export default function Ads() {
 
 
 export async function loader(){
-    const response = await fetch('http://localhost:3004/ads');
+    const url = `${processEnv.REACT_APP_SERVER_URL}ads`;
+    const response = await fetch(url);
     if(!response.ok) {
     return {isError: true, message: 'could not fetch ads'}
     }else {

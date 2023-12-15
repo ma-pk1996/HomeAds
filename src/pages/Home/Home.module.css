@@ -1,24 +1,24 @@
 
 .home {
-    margin-left: 11rem;
+    margin-left: 18%;
     background-color: white;
     color: black;
 }
 
 .darkhome {
-    margin-left: 11rem;
+    margin-left: 18%;
     background-color: #292d31;
     color: #ffffff;
 }
 
 .head {
-    margin-left: 17rem;
+    margin-left: 19%;
     margin-bottom: 3rem;
 }
 
 .khane {
     width: 650px;
     height: 350px;
-    margin-left: 7rem;
+    margin-left: 10%;
     border-radius: 14px;
 }

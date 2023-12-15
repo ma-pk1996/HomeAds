@@ -3,7 +3,7 @@ import { redirect, useLoaderData } from 'react-router-dom';
 import { AdItem } from '../../components';
 import classes from "./AdDetail.module.css"
 import { getAuthToken } from '../../utils';
-
+import { processEnv } from '../../process.env';
 
 
 export function AdsDetail() {
@@ -19,7 +19,8 @@ export function AdsDetail() {
 
 export async function loader({ params }) {
     const id = params.adid;
-    const response = await fetch(`http://localhost:3004/ads/${id}`);
+    const url = `${processEnv.REACT_APP_SERVER_URL}ads/` + id;
+    const response = await fetch(url);
     if(!response.ok) {
         return {isError: true, message: 'could not fetch ad'}; 
     } else {
@@ -32,7 +33,8 @@ export async function loader({ params }) {
 export async function action({ params, request }) {
     const id = params.adid;
     const token = getAuthToken();
-    const response = await fetch('http://localhost:3004/ads/' + id, {
+    const url = `${processEnv.REACT_APP_SERVER_URL}ads/` + id;
+    const response = await fetch(url, {
         method: request.method,
         headers: {
             'Authorization' : 'Bearer ' + token

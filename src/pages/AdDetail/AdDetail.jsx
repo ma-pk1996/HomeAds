@@ -19,6 +19,10 @@ export function AdsDetail() {
 
 export async function loader({ params }) {
     const id = params.adid;
+    const token = localStorage.getItem('token');
+    if(token.length === 0) {
+        return redirect('/auth');
+    }
     const url = `${processEnv.REACT_APP_SERVER_URL}ads/` + id;
     const response = await fetch(url);
     if(!response.ok) {

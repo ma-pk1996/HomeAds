@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { redirect, useLoaderData } from "react-router-dom";
 import { AdsList } from "../../components";
 import { useSelector } from "react-redux";
 import classes from "./Ads.module.css";
@@ -17,6 +17,10 @@ export default function Ads() {
 
 
 export async function loader(){
+    const token = localStorage.getItem('token');
+    if(token.length === 0) {
+        return redirect('/auth');
+    }
     const url = `${processEnv.REACT_APP_SERVER_URL}ads`;
     const response = await fetch(url);
     if(!response.ok) {

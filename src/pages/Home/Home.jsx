@@ -1,8 +1,13 @@
 import { useSelector } from 'react-redux';
 import classes from "./Home.module.css"
+import { redirect } from 'react-router-dom';
 
 export function Home() {
     const lightTheme = useSelector(state => state.theme.lightTheme);
+    const token = localStorage.getItem('token');
+    if(token.length > 0) {
+        return redirect('auth');
+    }
     return (
         <div className={lightTheme ? classes.home : classes.darkhome}>
             <h2 className={classes.head}>خرید و فروش خانه های خود را به ما بسپارید</h2>

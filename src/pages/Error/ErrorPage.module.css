@@ -1,18 +1,38 @@
 .content {
-    margin-top: 10rem;
+    margin-top: 2rem;
     text-align: center;
     justify-content: center;
     background-color: white;
 }
 .darkc {
-    margin-top: 10rem;
+    margin-top: 2rem;
     text-align: center;
     justify-content: center;
     background-color: #292d31;
+}
+
+.content h3 {
+    color: black;
+}
+
+.darkc h3 {
+    color: white;
 }
 
 .panda {
     width: 600px;
     height: 400px;
     border-radius: 1000px;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+}
+
+.darkc a {
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
 }

@@ -1,9 +1,11 @@
 .light {
+    margin-left: 14%;
     background-color: white;
     color: black;
 }
 
 .dark {
+    margin-left: 14%;
     background-color: #292d31;
     color: #ffffff;
 }

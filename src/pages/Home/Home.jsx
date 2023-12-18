@@ -5,8 +5,8 @@ import { redirect } from 'react-router-dom';
 export function Home() {
     const lightTheme = useSelector(state => state.theme.lightTheme);
     const token = localStorage.getItem('token');
-    if(token.length > 0) {
-        return redirect('auth');
+    if(!token) {
+        return redirect('/');
     }
     return (
         <div className={lightTheme ? classes.home : classes.darkhome}>

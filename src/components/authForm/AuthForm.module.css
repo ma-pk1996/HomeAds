@@ -6,8 +6,7 @@
 }
 
 .form label,
-.form input,
-.form textarea {
+.form input {
     display: block;
     width: 100%;
 }
@@ -16,10 +15,12 @@
     text-align: right;
 }
 
-.form input,
-.form textarea {
+.form input {
     font: inherit;
     padding: 0.25rem;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(242, 247, 252);
 }
 
 .lab {

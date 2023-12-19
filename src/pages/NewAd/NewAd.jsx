@@ -1,14 +1,17 @@
 import classes from "./NewAd.module.css"
 import { AdsForm } from "../../components/adsForm";
 import { useSelector } from "react-redux";
+import { redirect } from "react-router-dom";
 
 export function NewAd() {
     const lightTheme = useSelector(state => state.theme.lightTheme);
     const token = localStorage.getItem('token');
-    const isTokenExist = token.length > 0;
+    if(!token) {
+        return redirect('/error')
+    }
     return (
         <div className={lightTheme ? classes.light : classes.dark}>
-        {isTokenExist && <AdsForm method="post"/>}
+        <AdsForm method="post"/>
         </div>        
     )
 }

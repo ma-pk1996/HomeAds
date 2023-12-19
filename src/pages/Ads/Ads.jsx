@@ -19,7 +19,7 @@ export default function Ads() {
 export async function loader(){
     const token = localStorage.getItem('token');
     if(!token) {
-        return redirect('/');
+        return redirect('/error');
     }
     const url = `${processEnv.REACT_APP_SERVER_URL}ads`;
     const response = await fetch(url);

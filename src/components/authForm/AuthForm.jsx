@@ -15,7 +15,7 @@ export function AuthForm() {
     const [searchParams] = useSearchParams();
     const isSignup = searchParams.get('mode') === 'signup';
     const isSubmitting = navigation.state === 'submitting';
-
+    // {!authCheck ? <p style={{ justifyContent: 'center', textAlign: 'center', color: 'red' }}>Email or password is wrong!</p> : ''}
     return (
         <>
         <Form method="post" className={classes.form}>

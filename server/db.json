@@ -23,6 +23,14 @@
       "description": "آپارتمان دنج با ویوی ابدی",
       "location": "[35.67612355781042,51.289787290734246]",
       "id": "J27NIPQ"
+    },
+    {
+      "title": "آپارتمان 90 متری",
+      "image": "https://th.bing.com/th/id/R.be80348252f941544e87e347af51da07?rik=x77krWQfVdtARg&pid=ImgRaw&r=0",
+      "price": "234",
+      "description": "زیبا",
+      "location": "[35.77444142129461,51.41624450596283]",
+      "id": "8AWmSy6"
     }
   ],
   "users": [
@@ -35,26 +43,6 @@
       "email": "moji@gmail.com",
       "password": "$2a$10$qCwKjxduZOBfqOTUPcrgIeffkeQOCLg.xqQcWzV9uIP1NnU8xjWFa",
       "id": "EN4Pkd6"
-    },
-    {
-      "email": "mahdiii.pk75@gmail.com",
-      "password": "$2a$10$BeOKCDa4LEnpNOWbhMc2T.kMnlZcwKE5BrL/BHoD0DjIL1B/RLzOW",
-      "id": "zfLPNmH"
-    },
-    {
-      "email": "mahdi.pk77@gmail.com",
-      "password": "$2a$10$o2ngVVVIQIB4vrBpnRO8UuaF5cfGjIjg2DS3VXrRUXIrEPflG4DwG",
-      "id": "9zMPF_9"
-    },
-    {
-      "email": "kopak@gmail.com",
-      "password": "$2a$10$XgBWLqLCfsuQIF5ag3lbz.DGhD1ODvDZs4RgGqFCjWJN2rLKBDv2m",
-      "id": "4rpc_fP"
-    },
-    {
-      "email": "m.blackops77@gmail.com",
-      "password": "$2a$10$YD4GZ.XZQT4i55FcJnPpOe7M/CZX.Ayl4qHHZ6Nx6JZZnyuEilBKa",
-      "id": "ewtdd0x"
     }
   ]
 }

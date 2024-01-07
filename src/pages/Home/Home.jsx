@@ -6,7 +6,7 @@ export function Home() {
     const lightTheme = useSelector(state => state.theme.lightTheme);
     const token = localStorage.getItem('token');
     if(!token) {
-        return redirect('/error');
+        return redirect('/');
     }
     return (
         <div className={lightTheme ? classes.home : classes.darkhome}>

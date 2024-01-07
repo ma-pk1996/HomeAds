@@ -21,7 +21,7 @@ export async function loader({ params }) {
     const id = params.adid;
     const token = localStorage.getItem('token');
     if(token.length === 0) {
-        return redirect('/auth');
+        return redirect('');
     }
     const url = `${processEnv.REACT_APP_SERVER_URL}ads/` + id;
     const response = await fetch(url);

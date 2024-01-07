@@ -2,8 +2,13 @@ import { json, redirect } from 'react-router-dom';
 import { processEnv } from '../../process.env';
 import { AuthForm } from '../../components/authForm';
 
+
 export function AuthenticationPage() {
-  return <AuthForm />;
+  return (
+    <>
+    <AuthForm />
+    </>
+  );
 }
 
 
@@ -29,9 +34,10 @@ export async function action({ request }) {
     },
     body: JSON.stringify(authData),
   });
+  
 
-  if (response.status === 422 || response.status === 401) {
-    return response;
+  if (response.status === 400) {
+    return redirect('/');
   }
 
   if (!response.ok) {
